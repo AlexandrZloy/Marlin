@@ -99,14 +99,14 @@
   #define E1_CS_PIN        15
 #endif
 
-#define E2_STEP_PIN        25
-#define E2_DIR_PIN         23
-#define E2_ENABLE_PIN      27
-#ifndef E2_CS_PIN
-  #define E2_CS_PIN        61
+#define X2_STEP_PIN        25
+#define X2_DIR_PIN         23
+#define X2_ENABLE_PIN      27
+#ifndef X2_CS_PIN
+  #define X2_CS_PIN        61
 #endif
 
-#if USES_Z_MIN_PROBE_ENDSTOP
+#if HAS_CUSTOM_PROBE_PIN
   #define Z_MIN_PROBE_PIN  49
 #endif
 

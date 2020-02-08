@@ -25,7 +25,7 @@
  *  Z-Bolt X Series board – based on Arduino Mega2560
  */
 
-#if !defined(__AVR_ATmega2560__)
+#ifndef __AVR_ATmega2560__
   #error "Oops! Select 'Arduino/Genuino Mega or Mega 2560' in 'Tools > Board.'"
 #elif HOTENDS > 4 || E_STEPPERS > 4
   #error "Z-Bolt X Series board supports up to 4 hotends / E-steppers."
@@ -284,5 +284,23 @@
   #endif
   #ifndef E4_SERIAL_RX_PIN
     #define E4_SERIAL_RX_PIN -1
+  #endif
+  #ifndef E5_SERIAL_TX_PIN
+    #define E5_SERIAL_TX_PIN -1
+  #endif
+  #ifndef E5_SERIAL_RX_PIN
+    #define E5_SERIAL_RX_PIN -1
+  #endif
+  #ifndef E6_SERIAL_TX_PIN
+    #define E6_SERIAL_TX_PIN -1
+  #endif
+  #ifndef E6_SERIAL_RX_PIN
+    #define E6_SERIAL_RX_PIN -1
+  #endif
+  #ifndef E7_SERIAL_TX_PIN
+    #define E7_SERIAL_TX_PIN -1
+  #endif
+  #ifndef E7_SERIAL_RX_PIN
+    #define E7_SERIAL_RX_PIN -1
   #endif
 #endif
